@@ -1,0 +1,41 @@
+.list-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.title-section {
+    margin-top: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    color: #4d4b4b;
+}
+
+.card {
+    margin: 20px 10px 10px 30px;
+    width: 20%;
+    box-shadow: 0px 10px 5px #ff5a5f;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+
+.card-body{
+    padding: 3%;
+    text-align: center;
+}
+
+.body-text{
+    width: 80%;
+    margin: 0 auto;
+    padding: 3%;
+    color: #222;
+}
+.person-name{
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+    color: #ff5a5f;
+}

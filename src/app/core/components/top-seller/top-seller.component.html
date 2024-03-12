@@ -1,0 +1,47 @@
+<!-- top seller-->
+<section>
+    <h1 class="title-section">los mas vendidos están aquí</h1>
+
+    <!-- <div class="carousel">
+        <div class="carousel-inner" #carouselInner>
+        
+        </div>
+      
+        <button class="prev-button" (click)="prev()">Anterior</button>
+        <button class="next-button" (click)="next()">Siguiente</button>
+      </div> -->
+
+    <div class="list-cards">
+            <div class="card" *ngFor="let product of products">
+                <div>
+                    <img class="img" src="{{product.image}}" alt="">
+                </div>
+                <div class="card-body">
+                    <h1 class="title">{{product.name}}</h1>
+                    <p class="body-text">{{product.description}}</p>
+                    <div class="list-rating">
+                        <div class="rating" *ngFor="let i of [0, 1,2,3,4]">
+                            <i class="fa-solid fa-star" *ngIf="i < product.rating"></i>
+                            <i class="fa-solid fa-star-o" *ngIf="i >= product.rating"></i>
+                        </div>
+                        <p class="votes"><span>"</span><strong>{{product.votes}}</strong><span>"</span> </p>
+                    </div>
+                    <div class="price">
+                        <span class="price-text">${{product.price | currency:'COP'}}</span>
+                        <span class="discount-price" *ngIf="product.discount">{{product.discount}}%</span>
+                        <br />
+                        <span class="offer" *ngIf="product.discount">Offert expires in 3 days</span>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="quantity-control">
+                        <button class="btn-quantity" (click)="decrementQuantity(product)">-</button>
+                        <!-- <input type="number" class="input-quantity" min="0" [(ngModel)]="product.quantity"> -->
+                        <button class="btn-quantity" (click)="incrementQuantity(product)">+</button>
+                    </div>
+                    <button class="btn-add-to-buy" [ngClass]="{'disabled-buy-button':product.quantity==0}">Buy
+                        {{product.quantity}}</button>
+                </div>
+            </div>
+        </div>
+</section>

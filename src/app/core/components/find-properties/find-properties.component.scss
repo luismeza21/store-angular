@@ -1,0 +1,48 @@
+.backgroud {
+    background-image: url("../../../../assets/1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+
+}
+
+.main-title {
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.container-1 {
+    height: 600px;
+}
+
+.form-search {
+    display: flex;
+    gap: 10px;
+
+}
+
+h2,
+p {
+    color: #fff;
+}
+
+.button-own {
+    margin-left: 20px;
+    padding: 9px 25px;
+    background-color: #ff5a5f;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.button-own:hover {
+    background-color: #ffffff;
+    border: 2px solid #ff5a5f;
+    color: #ff5a5f;
+}
+
