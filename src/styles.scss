@@ -1,1 +1,84 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@fortawesome/fontawesome-free/css/all.css";
+:root{
+    --primary-color: #ff5a5f;
+    --primary-color-dark: #ff5a5f;
+    --text-dark:  #3d4047;
+    --text-light:  #fff;
+    --max-width: 1200px;
+   
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.section_subheader{
+    margin-bottom: 0.5rem;
+    position: relative;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: var(--text-dark);
+}
+
+.section_subheader::after{
+    position: absolute;
+    content: "";
+    top: 50%;
+    transform: translate(1rem, -50%);
+    height: 2px;
+    width: 4rem;
+    background-color: var(--primary-color);
+
+}
+
+.section_header{
+    max-width: 600px;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    line-height: 3rem;
+    color: var(--text-dark);
+}
+
+.section_description{
+    max-width: 600px;
+    margin-bottom: 1rem;
+    color: var(--text-light);
+
+}
+
+.btn-own{
+    width: 8rem;
+    padding: 0.75rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--bs-white);
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+.logo{
+    max-width: 120px;
+}
+
+
+body {
+    font-family: 'Nunito', sans-serif;
+   
+}
+
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
